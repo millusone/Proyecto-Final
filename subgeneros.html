@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subgéneros - Laboratorio del Futuro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Mismo CSS base + estilos para contenido */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #000; color: #fff; font-family: 'Rajdhani', sans-serif; min-height: 100vh; }
+        .background { position: fixed; inset: 0; background: linear-gradient(to bottom, #0a001f, #1a0033); background-image: url('https://source.unsplash.com/random/1920x1080/?matrix,cyber'); background-size: cover; z-index: -2; }
+        .overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.7); z-index: -1; }
+        nav { /* igual que antes */ position: fixed; top: 0; left: 0; width: 100%; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; z-index: 100; backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0, 255, 255, 0.3); }
+        .logo { font-family: 'Orbitron', sans-serif; font-size: 28px; font-weight: 900; color: #00ffff; text-shadow: 0 0 20px #00ffff; letter-spacing: 3px; }
+        .menu a { color: #ffffff; text-decoration: none; margin: 0 20px; font-size: 18px; position: relative; transition: all 0.3s; }
+        .menu a:hover { color: #00ffff; text-shadow: 0 0 15px #00ffff; }
+        .menu a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: #00ffff; transition: width 0.4s; }
+        .menu a:hover::after { width: 100%; }
+        .contenido { padding: 120px 50px 50px; max-width: 1000px; margin: 0 auto; line-height: 1.8; font-size: 20px; }
+        h2 { font-family: 'Orbitron', sans-serif; color: #00ffff; text-shadow: 0 0 20px #00ffff; margin: 60px 0 30px; font-size: 40px; text-align: center; }
+        .seccion { background: rgba(0, 20, 40, 0.6); padding: 40px; margin: 40px 0; border-radius: 15px; border: 1px solid #00ffff; }
+        blockquote { font-style: italic; color: #00ffaa; border-left: 4px solid #00ffff; padding-left: 20px; margin: 30px 0; font-size: 24px; }
+        .scanline { /* igual */ position: fixed; top: -100%; left: 0; width: 100%; height: 4px; background: linear-gradient(to bottom, transparent, #00ffff, transparent); animation: scan 10s linear infinite; opacity: 0.4; z-index: 10; }
+        @keyframes scan { 0% { top: -100%; } 100% { top: 100%; } }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay"></div>
+    <div class="scanline"></div>
+
+    <nav>
+        <div class="logo">LABORATORIO DEL FUTURO</div>
+        <div class="menu">
+            <a href="index.html">PORTADA</a>
+            <a href="subgeneros.html">SUBGÉNEROS</a>
+            <a href="pronostico.html">PRONÓSTICO</a>
+            <a href="referencias.html">REFERENCIAS</a>
+        </div>
+    </nav>
+
+    <div class="contenido">
+        <h2>Subgéneros de la Ficción Especulativa</h2>
+
+        <div class="seccion">
+            <h3>1. El Ciberpunk y la Distopía del Control</h3>
+            <p>El Ciberpunk, nacido en los años 80, visualizó un futuro de "alta tecnología y baja calidad de vida". Su mayor aporte fue el concepto de Ciberespacio, acuñado por William Gibson en <em>Neuromante</em> (1984), donde describe una "alucinación consensual" que hoy conocemos como internet y el metaverso.</p>
+            <p>Este género advierte sobre el poder de las megacorporaciones por encima de los estados-nación, una tendencia que sociólogos actuales analizan bajo el término "tecnofeudalismo".</p>
+            <blockquote>"El futuro ya está aquí, solo que no está distribuido de manera uniforme." — William Gibson</blockquote>
+        </div>
+
+<grok:render card_id="d8886c,5e629f,2817c3" card_type="image_card_group" type="render_card"></grok:render>
+
+        <div class="seccion">
+            <h3>2. Biopunk: El Cuerpo como Código</h3>
+            <p>Mientras el Ciberpunk se centra en el silicio, el Biopunk se centra en el carbono. Obras como <em>La chica mecánica</em> de Paolo Bacigalupi exploran un mundo donde la biotecnología es la fuerza dominante.</p>
+            <p>Aquí, la ciencia pronostica una humanidad "hackeable". La preocupación central es la democratización o el monopolio de la genética (CRISPR), planteando si la evolución humana seguirá siendo natural o se convertirá en un producto de consumo.</p>
+        </div>
+
+<grok:render card_id="b589fd,d51afa" card_type="image_card_group" type="render_card"></grok:render>
+
+        <div class="seccion">
+            <h3>3. Solarpunk: La Utopía Necesaria</h3>
+            <p>A diferencia de sus predecesores, el Solarpunk surge como una respuesta política y estética al colapso ecológico. Propone un futuro donde la tecnología (energía solar, arquitectura bioclimática) se integra con la naturaleza en lugar de explotarla.</p>
+            <p>Es un género reconstructivo que busca soluciones prácticas.</p>
+            <blockquote>"Necesitamos visiones de un futuro en el que queramos vivir, no solo de futuros que queramos evitar." — Jay Springett</blockquote>
+        </div>
+
+<grok:render card_id="a45786,c6d85a,b71486" card_type="image_card_group" type="render_card"></grok:render>
+
+    </div>
+</body>
+</html>

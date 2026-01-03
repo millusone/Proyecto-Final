@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Ficción Especulativa como Laboratorio del Futuro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        /* (El mismo CSS de la portada anterior, lo mantengo idéntico para coherencia) */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #000; color: #fff; font-family: 'Rajdhani', sans-serif; min-height: 100vh; overflow-x: hidden; }
+        .background { position: fixed; inset: 0; background: linear-gradient(to bottom, #0a001f, #1a0033); background-image: url('https://source.unsplash.com/random/1920x1080/?nebula,galaxy,cyan'); background-size: cover; background-position: center; z-index: -2; }
+        .overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.6); z-index: -1; }
+        nav { position: fixed; top: 0; left: 0; width: 100%; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; z-index: 100; backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0, 255, 255, 0.3); }
+        .logo { font-family: 'Orbitron', sans-serif; font-size: 28px; font-weight: 900; color: #00ffff; text-shadow: 0 0 20px #00ffff; letter-spacing: 3px; }
+        .menu a { color: #ffffff; text-decoration: none; margin: 0 20px; font-size: 18px; font-weight: 500; position: relative; transition: all 0.3s; }
+        .menu a:hover { color: #00ffff; text-shadow: 0 0 15px #00ffff; }
+        .menu a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: #00ffff; transition: width 0.4s; }
+        .menu a:hover::after { width: 100%; }
+        .portada { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
+        .titulo-principal { font-family: 'Orbitron', sans-serif; font-size: 70px; font-weight: 900; color: #00ffff; text-shadow: 0 0 30px #00ffff, 0 0 60px #00ffff; letter-spacing: 8px; margin-bottom: 30px; animation: glow 3s ease-in-out infinite alternate; }
+        .intro { font-size: 24px; max-width: 800px; line-height: 1.6; color: #a0f0ff; }
+        .scanline { position: fixed; top: -100%; left: 0; width: 100%; height: 4px; background: linear-gradient(to bottom, transparent, #00ffff, transparent); animation: scan 10s linear infinite; opacity: 0.4; pointer-events: none; z-index: 10; }
+        @keyframes scan { 0% { top: -100%; } 100% { top: 100%; } }
+        @keyframes glow { from { text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff; } to { text-shadow: 0 0 40px #00ffff, 0 0 80px #00ffff; } }
+        @media (max-width: 768px) { .titulo-principal { font-size: 45px; } .intro { font-size: 20px; } }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay"></div>
+    <div class="scanline"></div>
+
+    <nav>
+        <div class="logo">LABORATORIO DEL FUTURO</div>
+        <div class="menu">
+            <a href="index.html">PORTADA</a>
+            <a href="subgeneros.html">SUBGÉNEROS</a>
+            <a href="pronostico.html">PRONÓSTICO</a>
+            <a href="referencias.html">REFERENCIAS</a>
+        </div>
+    </nav>
+
+    <section class="portada">
+        <h1 class="titulo-principal">LA FICCIÓN ESPECULATIVA COMO LABORATORIO DEL FUTURO</h1>
+        <p class="intro">
+            La ciencia ficción especulativa no intenta predecir el futuro de forma lineal, sino que utiliza la extrapolación para explorar las consecuencias de las tendencias actuales.<br><br>
+            Como bien señaló Ursula K. Le Guin: <em>"La ciencia ficción no es predictiva; es descriptiva de la realidad presente llevada a sus extremos".</em>
+        </p>
+    </section>
+</body>
+</html>

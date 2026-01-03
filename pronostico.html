@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronóstico - Laboratorio del Futuro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS similar al anterior */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #000; color: #fff; font-family: 'Rajdhani', sans-serif; min-height: 100vh; }
+        .background { position: fixed; inset: 0; background: linear-gradient(to bottom, #0a001f, #1a0033); background-image: url('https://source.unsplash.com/random/1920x1080/?future,lab'); background-size: cover; z-index: -2; }
+        .overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.7); z-index: -1; }
+        /* nav igual... */
+        nav { position: fixed; top: 0; left: 0; width: 100%; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; z-index: 100; backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0, 255, 255, 0.3); }
+        .logo { font-family: 'Orbitron', sans-serif; font-size: 28px; font-weight: 900; color: #00ffff; text-shadow: 0 0 20px #00ffff; letter-spacing: 3px; }
+        .menu a { color: #ffffff; text-decoration: none; margin: 0 20px; font-size: 18px; position: relative; transition: all 0.3s; }
+        .menu a:hover { color: #00ffff; text-shadow: 0 0 15px #00ffff; }
+        .menu a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: #00ffff; transition: width 0.4s; }
+        .menu a:hover::after { width: 100%; }
+        .contenido { padding: 120px 50px 50px; max-width: 900px; margin: 0 auto; line-height: 1.8; font-size: 20px; text-align: center; }
+        h2 { font-family: 'Orbitron', sans-serif; color: #00ffff; text-shadow: 0 0 20px #00ffff; margin-bottom: 50px; font-size: 50px; }
+        p { margin: 30px 0; }
+        .scanline { position: fixed; top: -100%; left: 0; width: 100%; height: 4px; background: linear-gradient(to bottom, transparent, #00ffff, transparent); animation: scan 10s linear infinite; opacity: 0.4; z-index: 10; }
+        @keyframes scan { 0% { top: -100%; } 100% { top: 100%; } }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay"></div>
+    <div class="scanline"></div>
+
+    <nav>
+        <div class="logo">LABORATORIO DEL FUTURO</div>
+        <div class="menu">
+            <a href="index.html">PORTADA</a>
+            <a href="subgeneros.html">SUBGÉNEROS</a>
+            <a href="pronostico.html">PRONÓSTICO</a>
+            <a href="referencias.html">REFERENCIAS</a>
+        </div>
+    </nav>
+
+    <div class="contenido">
+        <h2>¿Cómo pronostica la ficción la humanidad futura?</h2>
+        <p>La relación entre ficción y ciencia se basa en el <strong>Prototipado de Ficción (Science Fiction Prototyping)</strong>. Según el investigador Brian David Johnson, este método utiliza la narrativa para diseñar el futuro basándose en datos científicos reales, permitiendo a los ingenieros prever el impacto social de sus inventos antes de que salgan del laboratorio.</p>
+        <p>La ficción especulativa actúa como un <strong>sistema de alerta temprana</strong>. No nos dice qué tecnologías tendremos, sino cómo esas tecnologías transformarán nuestra ética, nuestra identidad y nuestra supervivencia como especie.</p>
+    </div>
+
+<grok:render card_id="3d1318,cd2c21" card_type="image_card_group" type="render_card"></grok:render>
+
+</body>
+</html>
